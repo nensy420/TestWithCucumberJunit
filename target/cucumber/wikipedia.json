@@ -1,0 +1,101 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "line": 3,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 143345875,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "The user on AutoRia page",
+            "match": {
+              "location": "Steps.the_user_on_AutoRia_page()"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 8092059374,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.beforeScenario(Scenario)"
+            }
+          }
+        ],
+        "line": 6,
+        "name": "The user can\u0027t authorization with invalid data #1",
+        "description": "",
+        "id": "check-invalid-authorization;the-user-can\u0027t-authorization-with-invalid-data-#1",
+        "after": [
+          {
+            "result": {
+              "duration": 1160557340,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.afterScenario(Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 2829069338,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "The user click on Login in link",
+            "match": {
+              "location": "Steps.theUserClickOnLoginInLink()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 11068285044,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "The user enter in invalid telephone number",
+            "match": {
+              "location": "Steps.The_user_enter_in_invalid_telephone_number()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 20875872,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "The error message is displayed on the authorization page",
+            "match": {
+              "location": "Steps.the_error_message_is_displayed_on_the_authorization_page()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      }
+    ],
+    "name": "Check invalid authorization",
+    "description": "",
+    "id": "check-invalid-authorization",
+    "keyword": "Feature",
+    "uri": "src/test/resources/features/authorization.feature"
+  }
+]
