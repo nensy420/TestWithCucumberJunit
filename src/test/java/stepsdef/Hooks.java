@@ -12,7 +12,6 @@ public class Hooks {
     public void beforeScenario(Scenario scenario){
         System.setProperty("webdriver.gecko.driver", "src\\test\\resources\\drivers\\geckodriver.exe");
         setDriver(DriverManager.Driver.Firefox);
-        getDriver().get("https://auto.ria.com/");
     }
 
     @After

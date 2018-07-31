@@ -11,13 +11,13 @@
         "steps": [
           {
             "result": {
-              "duration": 143345875,
+              "duration": 8864285184,
               "status": "passed"
             },
             "line": 4,
             "name": "The user on AutoRia page",
             "match": {
-              "location": "Steps.the_user_on_AutoRia_page()"
+              "location": "Steps.theUserOnAutoRiaPage()"
             },
             "keyword": "Given "
           }
@@ -27,7 +27,7 @@
         "before": [
           {
             "result": {
-              "duration": 8092059374,
+              "duration": 2248615,
               "status": "passed"
             },
             "match": {
@@ -42,7 +42,7 @@
         "after": [
           {
             "result": {
-              "duration": 1160557340,
+              "duration": 1199716431,
               "status": "passed"
             },
             "match": {
@@ -55,7 +55,7 @@
         "steps": [
           {
             "result": {
-              "duration": 2829069338,
+              "duration": 2434788745,
               "status": "passed"
             },
             "line": 7,
@@ -67,25 +67,31 @@
           },
           {
             "result": {
-              "duration": 11068285044,
+              "duration": 11109585186,
               "status": "passed"
             },
             "line": 8,
-            "name": "The user enter in invalid telephone number",
+            "name": "The user enter in invalid telephone \u003d \"032679\" number",
             "match": {
-              "location": "Steps.The_user_enter_in_invalid_telephone_number()"
+              "arguments": [
+                {
+                  "val": "032679",
+                  "offset": 39
+                }
+              ],
+              "location": "Steps.theUserEnterInInvalidTelephoneNumber(String)"
             },
             "keyword": "And "
           },
           {
             "result": {
-              "duration": 20875872,
+              "duration": 36503779,
               "status": "passed"
             },
             "line": 9,
             "name": "The error message is displayed on the authorization page",
             "match": {
-              "location": "Steps.the_error_message_is_displayed_on_the_authorization_page()"
+              "location": "Steps.theErrorMessageIsDisplayedOnTheAuthorizationPage()"
             },
             "keyword": "Then "
           }
@@ -96,6 +102,222 @@
     "description": "",
     "id": "check-invalid-authorization",
     "keyword": "Feature",
-    "uri": "src/test/resources/features/authorization.feature"
+    "uri": "authorization.feature"
+  },
+  {
+    "line": 1,
+    "elements": [
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 29948,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.beforeScenario(Scenario)"
+            }
+          }
+        ],
+        "line": 9,
+        "name": "The search results correspond to the specified parameters",
+        "description": "",
+        "id": "search-verification;the-search-results-correspond-to-the-specified-parameters;;2",
+        "after": [
+          {
+            "result": {
+              "duration": 1369516977,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.afterScenario(Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 8336527451,
+              "status": "passed"
+            },
+            "line": 3,
+            "name": "The user on AutoRia page",
+            "match": {
+              "location": "Steps.theUserOnAutoRiaPage()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 1545783571,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "The user enters the \"Audi\",\"Киев\" in the search form",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Audi",
+                  "offset": 21
+                },
+                {
+                  "val": "Киев",
+                  "offset": 28
+                }
+              ],
+              "location": "Steps.theUserEntersTheCarBrandRegionInTheSearchForm(String,String)"
+            },
+            "matchedColumns": [
+              0,
+              1
+            ],
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 2994981336,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "The user clicks on search button",
+            "match": {
+              "location": "Steps.theUserClicksOnSearchButton()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 10040992803,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "The user sees that results of search match the specified search parameters \"Киев\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Киев",
+                  "offset": 76
+                }
+              ],
+              "location": "Steps.theUserSeesThatResultsOfSearchMatchTheSpecifiedSearchParameters(String)"
+            },
+            "matchedColumns": [
+              1
+            ],
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 29949,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.beforeScenario(Scenario)"
+            }
+          }
+        ],
+        "line": 10,
+        "name": "The search results correspond to the specified parameters",
+        "description": "",
+        "id": "search-verification;the-search-results-correspond-to-the-specified-parameters;;3",
+        "after": [
+          {
+            "result": {
+              "duration": 1310278437,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.afterScenario(Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 7539924702,
+              "status": "passed"
+            },
+            "line": 3,
+            "name": "The user on AutoRia page",
+            "match": {
+              "location": "Steps.theUserOnAutoRiaPage()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 1485388109,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "The user enters the \"BMW\",\"Винница\" in the search form",
+            "match": {
+              "arguments": [
+                {
+                  "val": "BMW",
+                  "offset": 21
+                },
+                {
+                  "val": "Винница",
+                  "offset": 27
+                }
+              ],
+              "location": "Steps.theUserEntersTheCarBrandRegionInTheSearchForm(String,String)"
+            },
+            "matchedColumns": [
+              0,
+              1
+            ],
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 3169645058,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "The user clicks on search button",
+            "match": {
+              "location": "Steps.theUserClicksOnSearchButton()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 10038500086,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "The user sees that results of search match the specified search parameters \"Винница\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Винница",
+                  "offset": 76
+                }
+              ],
+              "location": "Steps.theUserSeesThatResultsOfSearchMatchTheSpecifiedSearchParameters(String)"
+            },
+            "matchedColumns": [
+              1
+            ],
+            "keyword": "Then "
+          }
+        ]
+      }
+    ],
+    "name": "Search verification",
+    "description": "",
+    "id": "search-verification",
+    "keyword": "Feature",
+    "uri": "search.feature"
   }
 ]

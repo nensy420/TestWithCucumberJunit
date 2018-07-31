@@ -13,6 +13,7 @@ public class HomeRiaPage {
     @FindBy(xpath = "//div[@id='header']//div[@class='container']//span[@class='tl']")
     private WebElement enterTo;
 
+
     private WebElement waitTime(WebElement element) {
         WebDriverWait wait = new WebDriverWait(driver, 20);
         wait.until(ExpectedConditions.elementToBeClickable(element));

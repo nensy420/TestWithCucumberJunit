@@ -9,7 +9,7 @@ import org.junit.runner.RunWith;
         "json:target/cucumber/wikipedia.json",
         "html:target/cucumber/wikipedia.html",
         "pretty"},
-        features="src\\test\\resources\\features\\authorization.feature",glue="stepsdef",
+        features="src\\test\\resources\\features",glue="stepsdef",
         tags = {"~@ignored"}
 )
 public class Runner {
