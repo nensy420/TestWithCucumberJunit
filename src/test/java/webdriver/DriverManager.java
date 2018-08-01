@@ -1,6 +1,8 @@
 package webdriver;
 
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebDriverException;
+import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.ie.InternetExplorerDriver;
 import java.util.concurrent.TimeUnit;
@@ -12,7 +14,7 @@ public class DriverManager {
     private DriverManager(){
     }
     public enum Driver{
-        Firefox, IE
+        Firefox, IE, Chrome
     }
 
     public static void setDriver(Driver driverType){
@@ -24,13 +26,18 @@ public class DriverManager {
             switch (driverType) {
 
                 case Firefox:
+                    System.setProperty("webdriver.gecko.driver", "src\\test\\resources\\drivers\\geckodriver.exe");
                     driver = new FirefoxDriver();
                     break;
                 case IE:
                     driver = new InternetExplorerDriver();
                     break;
+                case Chrome:
+                    System.setProperty("webdriver.chrome.driver", "src\\test\\resources\\drivers\\chromedriver.exe");
+                    driver = new ChromeDriver();
+                    break;
                 default:
-                    driver = new FirefoxDriver();
+                    throw new WebDriverException("Driver is not defined.");
             }
             driver.manage().window().maximize();
             driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);

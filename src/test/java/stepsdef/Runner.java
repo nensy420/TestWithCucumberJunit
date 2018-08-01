@@ -5,10 +5,11 @@ import cucumber.api.junit.Cucumber;
 import org.junit.runner.RunWith;
 
 @RunWith(Cucumber.class)
-@CucumberOptions( format = {
-        "json:target/cucumber/wikipedia.json",
-        "html:target/cucumber/wikipedia.html",
-        "pretty"},
+@CucumberOptions( plugin = {
+        "html:target/cucumber-html-report",
+        "json:target/cucumber.json",
+        "pretty:target/cucumber.txt" ,
+        "junit:target/cucumber-results.xml"},
         features="src\\test\\resources\\features",glue="stepsdef",
         tags = {"~@ignored"}
 )
