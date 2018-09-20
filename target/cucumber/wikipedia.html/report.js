@@ -7,7 +7,7 @@ formatter.feature({
   "keyword": "Feature"
 });
 formatter.before({
-  "duration": 2248615,
+  "duration": 2591588,
   "status": "passed"
 });
 formatter.background({
@@ -26,7 +26,7 @@ formatter.match({
   "location": "Steps.theUserOnAutoRiaPage()"
 });
 formatter.result({
-  "duration": 8864285184,
+  "duration": 8542855572,
   "status": "passed"
 });
 formatter.scenario({
@@ -56,7 +56,7 @@ formatter.match({
   "location": "Steps.theUserClickOnLoginInLink()"
 });
 formatter.result({
-  "duration": 2434788745,
+  "duration": 2097092473,
   "status": "passed"
 });
 formatter.match({
@@ -69,18 +69,18 @@ formatter.match({
   "location": "Steps.theUserEnterInInvalidTelephoneNumber(String)"
 });
 formatter.result({
-  "duration": 11109585186,
+  "duration": 11090501296,
   "status": "passed"
 });
 formatter.match({
   "location": "Steps.theErrorMessageIsDisplayedOnTheAuthorizationPage()"
 });
 formatter.result({
-  "duration": 36503779,
+  "duration": 35958960,
   "status": "passed"
 });
 formatter.after({
-  "duration": 1199716431,
+  "duration": 1413662599,
   "status": "passed"
 });
 formatter.uri("search.feature");
@@ -153,7 +153,7 @@ formatter.examples({
   "keyword": "Examples"
 });
 formatter.before({
-  "duration": 29948,
+  "duration": 22154,
   "status": "passed"
 });
 formatter.scenario({
@@ -195,7 +195,7 @@ formatter.match({
   "location": "Steps.theUserOnAutoRiaPage()"
 });
 formatter.result({
-  "duration": 8336527451,
+  "duration": 6743631695,
   "status": "passed"
 });
 formatter.match({
@@ -212,14 +212,14 @@ formatter.match({
   "location": "Steps.theUserEntersTheCarBrandRegionInTheSearchForm(String,String)"
 });
 formatter.result({
-  "duration": 1545783571,
+  "duration": 1626170820,
   "status": "passed"
 });
 formatter.match({
   "location": "Steps.theUserClicksOnSearchButton()"
 });
 formatter.result({
-  "duration": 2994981336,
+  "duration": 3727955804,
   "status": "passed"
 });
 formatter.match({
@@ -232,15 +232,15 @@ formatter.match({
   "location": "Steps.theUserSeesThatResultsOfSearchMatchTheSpecifiedSearchParameters(String)"
 });
 formatter.result({
-  "duration": 10040992803,
+  "duration": 10063634435,
   "status": "passed"
 });
 formatter.after({
-  "duration": 1369516977,
+  "duration": 1367355336,
   "status": "passed"
 });
 formatter.before({
-  "duration": 29949,
+  "duration": 34461,
   "status": "passed"
 });
 formatter.scenario({
@@ -282,7 +282,7 @@ formatter.match({
   "location": "Steps.theUserOnAutoRiaPage()"
 });
 formatter.result({
-  "duration": 7539924702,
+  "duration": 6882096869,
   "status": "passed"
 });
 formatter.match({
@@ -299,14 +299,14 @@ formatter.match({
   "location": "Steps.theUserEntersTheCarBrandRegionInTheSearchForm(String,String)"
 });
 formatter.result({
-  "duration": 1485388109,
+  "duration": 1482422777,
   "status": "passed"
 });
 formatter.match({
   "location": "Steps.theUserClicksOnSearchButton()"
 });
 formatter.result({
-  "duration": 3169645058,
+  "duration": 2987553646,
   "status": "passed"
 });
 formatter.match({
@@ -319,11 +319,11 @@ formatter.match({
   "location": "Steps.theUserSeesThatResultsOfSearchMatchTheSpecifiedSearchParameters(String)"
 });
 formatter.result({
-  "duration": 10038500086,
+  "duration": 10072389303,
   "status": "passed"
 });
 formatter.after({
-  "duration": 1310278437,
+  "duration": 1375158000,
   "status": "passed"
 });
 });
