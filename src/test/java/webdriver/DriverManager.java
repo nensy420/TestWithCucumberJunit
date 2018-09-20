@@ -8,32 +8,22 @@ import org.openqa.selenium.ie.InternetExplorerDriver;
 import java.util.concurrent.TimeUnit;
 
 public class DriverManager {
-    private static Driver driverType;
-    private static WebDriver driver = null;
-
-    private DriverManager(){
-    }
-    public enum Driver{
-        Firefox, IE, Chrome
-    }
-
-    public static void setDriver(Driver driverType){
-        DriverManager.driverType = driverType;
-    }
+    private static WebDriver driver;
 
     public static WebDriver getDriver() {
         if (driver == null) {
-            switch (driverType) {
+            switch (ConfigForProperties.getBrowser()) {
 
-                case Firefox:
-                    System.setProperty("webdriver.gecko.driver", "src\\test\\resources\\drivers\\geckodriver.exe");
+                case "firefox":
+                    System.setProperty("webdriver.gecko.driver", ConfigForProperties.getDriverPath());
                     driver = new FirefoxDriver();
                     break;
-                case IE:
+                case "IE":
+                    System.setProperty("webdriver.ie.driver", ConfigForProperties.getDriverPath());
                     driver = new InternetExplorerDriver();
                     break;
-                case Chrome:
-                    System.setProperty("webdriver.chrome.driver", "src\\test\\resources\\drivers\\chromedriver.exe");
+                case "chrome":
+                    System.setProperty("webdriver.chrome.driver", ConfigForProperties.getDriverPath());
                     driver = new ChromeDriver();
                     break;
                 default:
@@ -45,8 +35,8 @@ public class DriverManager {
         return driver;
     }
 
-    public static void quitDriver(){
-        if(driver != null){
+    public static void quitDriver() {
+        if (driver != null) {
             driver.quit();
             driver = null;
         }
